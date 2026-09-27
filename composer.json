@@ -1,0 +1,37 @@
+{
+    "name": "vynex/pay-php",
+    "description": "SDK PHP oficial da API Vynex Pay (/api/v1): recursos por família, Idempotency-Key automática, retry com backoff, paginação automática e verificação de webhook.",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://pay.vynexsystems.com/docs/sdks",
+    "support": {
+        "issues": "https://github.com/vynex-systems/pay-php-sdk/issues",
+        "source": "https://github.com/vynex-systems/pay-php-sdk",
+        "docs": "https://pay.vynexsystems.com/docs"
+    },
+    "keywords": ["vynex", "pay", "payments", "pix", "api", "sdk"],
+    "require": {
+        "php": "^8.1",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vynex\\Pay\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Vynex\\Pay\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
